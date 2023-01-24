@@ -1,0 +1,25 @@
+@use 'reset';
+body, .container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: max-content;
+  min-height: 100vh; }
+
+main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+canvas {
+  position: absolute; }
+  canvas#game-screen {
+    z-index: 2;
+    background-color: transparent; }
+  canvas#game-background {
+    z-index: 0;
+    background-color: #fde9b2; }
+
+/*# sourceMappingURL=style.css.map */
