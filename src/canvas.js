@@ -12,8 +12,8 @@ canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
 const area = {
-    x: 20, 
-    y: 20
+    x: 10, 
+    y: 10
 };
 
 
