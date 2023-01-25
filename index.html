@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da cobrinha</title>
-    
+
     <script src="src/canvas.js" type="module" defer></script>
     <script src="src/index.js" type="module" defer></script>
 
@@ -38,13 +38,24 @@
                 <div class="modal " id="beginInfo">
                     
                     <div class="content">
-
+                        <section class="info">
+                            <div class="score item">
+                                <img src="assets/apple.svg" alt="apple" class="icon">
+                                <div class="data score">0</div>
+                            </div>
+        
+                            <div class="timer item">
+                                <img src="assets/clock-time-timer-watch-svgrepo-com.svg" alt="apple" class="icon">
+                                <div class="data time">00:00</div>
+                            </div>
+        
+                        </section>
                         <div class="actions">
                             <button class="item" id="init-game">
                                 <span class="item__icon material-symbols-outlined">
                                     play_arrow
                                 </span>
-                                <span class="item__name">Começar</span>
+                                <span class="item__name">start</span>
                             </button>
                         </div>
 

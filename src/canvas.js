@@ -45,6 +45,8 @@ initButton.addEventListener('click', () => {
         area,
     });
 
+    let initialSpeed = 150;
+
     document.addEventListener('keydown', (e) => {
 
         let direction = {
@@ -69,10 +71,13 @@ initButton.addEventListener('click', () => {
 
         if ( snake.dead ) {
             modal.classList.toggle('hide');
+            modal.querySelector('.score.data').innerText = snake.total - 1;
+            modal.querySelector('.time.data').innerText = timer.text;
             clearInterval(funId)
             return;
         };
     
+
         setTimeout(() => {
             requestAnimationFrame(animate);
             ctx.clearRect(0,0, canvas.width, canvas.height );
@@ -80,7 +85,7 @@ initButton.addEventListener('click', () => {
             food.update();
             snake.update( food );
     
-        }, 150);
+        }, initialSpeed - snake.total);
         
     }
 

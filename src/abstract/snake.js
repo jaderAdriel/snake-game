@@ -45,12 +45,6 @@ export class Snake {
             );
         }
         
-        this.ctx.strokeStyle = this.tailColor
-        this.ctx.strokeRect(
-            this.position.x, this.position.y, 
-            this.area.x, this.area.y
-        );
-        
     }
 
     shiftPositions () {
