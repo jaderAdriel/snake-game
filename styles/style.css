@@ -1,23 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap");
 @use 'reset';
+:root {
+  --primary: rgb(94, 94, 255); }
+
 body, .container {
   padding: 0;
   margin: 0;
   width: 100%;
   height: max-content;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif; }
 
 main {
   position: relative;
-  height: 100vh;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#game-container {
+  position: relative;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: fit-content;
+  background-color: rgba(62, 156, 59, 0.973); }
+
+canvas#game-screen {
+  background-color: #81ff70; }
+
+.info {
+  width: 100%;
+  background-color: rgba(62, 156, 59, 0.973);
+  padding: 1rem 0; }
+
+.score {
+  display: flex;
+  color: #fff;
+  font-size: 1rem; }
+  .score #score__data {
+    display: flex;
+    margin-top: auto;
+    height: 1.5rem; }
+  .score .icon {
+    width: 1.7rem;
+    height: auto;
+    object-fit: contain; }
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 10; }
+  .modal.hide {
+    display: none; }
 
-canvas {
-  position: absolute; }
-  canvas#game-screen {
-    z-index: 2;
-    background-color: transparent;
-    outline: 1px inset gray; }
+.actions .item {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary);
+  color: #fff;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer; }
+  .actions .item__name {
+    font-size: 1rem;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
