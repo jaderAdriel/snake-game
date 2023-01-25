@@ -19,3 +19,5 @@ Rewrite snake game with vanilla.js and html canvas
 
 - [@jaderAdriel](https://www.github.com/jaderAdriel)
 
+Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a>
+
