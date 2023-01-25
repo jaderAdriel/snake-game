@@ -38,13 +38,22 @@ export class Snake {
                 this.area.x,
                 this.area.y ,
             );
+            this.ctx.strokeStyle = 'white'
+            this.ctx.strokeRect(
+                element.x, element.y, 
+                this.area.x, this.area.y
+            );
         }
-
+        
+        this.ctx.strokeStyle = this.tailColor
+        this.ctx.strokeRect(
+            this.position.x, this.position.y, 
+            this.area.x, this.area.y
+        );
         
     }
 
     shiftPositions () {
-        // console.log(this.tail);
         for (let index = 0; index < this.tail.length - 1 ; index++) {
             const nextElement = this.tail[index + 1];
 
@@ -57,7 +66,6 @@ export class Snake {
 
         if (this.total === this.tail.length) {
             this.shiftPositions();
-            console.log(this.tail, this.total);
         }
 
         if ( this.position.x === food.position.x && this.position.y === food.position.y  ) {
@@ -83,7 +91,7 @@ export class Snake {
 
     eat () {
         this.total++;
-        console.log(this.tail , this.total);
+        document.getElementById('score__data').innerText = this.total - 1
     }
 
     setDirection (direction) {

@@ -37,6 +37,11 @@ export class Food {
             this.position.x, this.position.y, 
             this.area.x, this.area.y
         );
+        this.ctx.strokeStyle = 'gray'
+        this.ctx.strokeRect(
+            this.position.x, this.position.y, 
+            this.area.x, this.area.y
+        );
         
     }
 
