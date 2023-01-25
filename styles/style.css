@@ -35,18 +35,21 @@ canvas#game-screen {
 
 .info {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(62, 156, 59, 0.973);
   padding: 1rem 0; }
-
-.score {
-  display: flex;
-  color: #fff;
-  font-size: 1rem; }
-  .score #score__data {
+  .info .item {
+    display: flex;
+    color: #fff;
+    font-size: 1rem; }
+  .info .data {
     display: flex;
     margin-top: auto;
-    height: 1.5rem; }
-  .score .icon {
+    height: 1.5rem;
+    font-family: monospace; }
+  .info .icon {
     width: 1.7rem;
     height: auto;
     object-fit: contain; }
