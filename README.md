@@ -1,7 +1,7 @@
 
 # Snake game
 
-rewriten Snake game with vanilla.js utilizando canvas html
+Rewrite snake game with vanilla.js and html canvas
 
 ## Features
 
