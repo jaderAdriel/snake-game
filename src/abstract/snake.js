@@ -33,8 +33,8 @@ export class Snake {
             const element = this.tail[index];
             this.ctx.fillStyle = this.tailColor;
             this.ctx.fillRect(
-                element.position.x ,
-                element.position.y, 
+                element.x ,
+                element.y, 
                 this.area.x,
                 this.area.y ,
             );
@@ -72,10 +72,7 @@ export class Snake {
         
         this.setPosition( newPosition );
 
-        this.tail[this.total - 1] = { 
-            position: this.position, 
-            direction: this.direction 
-        };
+        this.tail[this.total - 1] = this.position
 
         this.changedDirection();
 
