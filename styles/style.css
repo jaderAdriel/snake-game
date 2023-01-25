@@ -17,9 +17,7 @@ canvas {
   position: absolute; }
   canvas#game-screen {
     z-index: 2;
-    background-color: transparent; }
-  canvas#game-background {
-    z-index: 0;
-    background-color: #fde9b2; }
+    background-color: transparent;
+    outline: 1px inset gray; }
 
 /*# sourceMappingURL=style.css.map */

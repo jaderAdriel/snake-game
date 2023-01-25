@@ -19,15 +19,10 @@ main {
 
 canvas{
     position: absolute; 
-
     &#game-screen {
         z-index: 2;
         background-color: transparent;
-
-    }
-    &#game-background {
-        z-index: 0;
-        background-color: #fde9b2;
+        outline: 1px inset gray;
     }
 }
 
